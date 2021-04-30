@@ -14,7 +14,19 @@ Overall stock performance based on a percentage return was much lower in 2018 th
 
 ### Efficiency & Optimization of Original vs Refactored Script
 
-![image_name](Theater_Outcomes_vs_Launch.png)
+After refactoring the VBA script we found that speed of the macro dramatically reduced. The macro went from taking 0.93 seconds to 0.22 seconds for 2018 and 1.03 seconds to 0.21 seconds for 2017. See below for example comparison screenshots. 
+
+Refactored 2018
+![image_name](VBA_Challenge_2018.png)
+
+Refactored 2017
+![image_name](VBA_Challenge_2017.png)
+
+Original 2018
+![image_name](VBA_Challenge_2018_Original.png)
+
+Original 2017
+![image_name](VBA_Challenge_2017_Original.png)
 
 
 ## Summary
