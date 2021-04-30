@@ -104,7 +104,6 @@ Some of the code is similar between the original and the refactored version, but
         Cells(4 + i, 2).Value = totalVolume
         Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
     
-    Next i'`
 
 
 ## Summary
