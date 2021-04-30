@@ -34,14 +34,14 @@ Some of the code is similar between the original and the refactored version. I h
 
   - Refactored Code: 
 
-   '1a) Create a ticker Index
+    '1a) Create a ticker Index
     Dim tickerIndex As Long
     tickerIndex = 0
-
+    
     '1b) Create three output arrays
-    Dim tickerVolumes(12) As Long
-    Dim tickerStartingPrices(12) As Single
-    Dim tickerEndingPrices(12) As Single
+      Dim tickerVolumes(12) As Long
+      Dim tickerStartingPrices(12) As Single
+      Dim tickerEndingPrices(12) As Single
     
     ''2a) Create a for loop to initialize the tickerVolumes to zero.
     For i = 0 To 11
