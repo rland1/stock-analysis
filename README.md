@@ -32,23 +32,7 @@ Original 2017
 
 Some of the code is similar between the original and the refactored version. I have copy and pasted some areas where it was different between the two. One of the big differences is that the refactored code uses multiple arrays. 
 
-  - Refactored Code: 
-
-    '1a) Create a ticker Index
-    Dim tickerIndex As Long
-    tickerIndex = 0
-    
-    '1b) Create three output arrays
-      Dim tickerVolumes(12) As Long
-      Dim tickerStartingPrices(12) As Single
-      Dim tickerEndingPrices(12) As Single
-    
-    ''2a) Create a for loop to initialize the tickerVolumes to zero.
-    For i = 0 To 11
-        tickerVolumes(i) = 0
-    Next i
-    ''2b) Loop over all the rows in the spreadsheet.
-    For i = 2 To RowCount
+- Refactored Code
         
         '3a) Increase volume for current ticker
         
@@ -67,14 +51,12 @@ Some of the code is similar between the original and the refactored version. I h
             
             tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
             
-
             '3d Increase the tickerIndex.
             
             tickerIndex = tickerIndex + 1
             
         End If
-    
-    Next i
+   
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
     For i = 0 To 11
@@ -85,25 +67,10 @@ Some of the code is similar between the original and the refactored version. I h
         Cells(i + 4, 2).Value = tickerVolumes(tickerIndex)
         Cells(i + 4, 3).Value = tickerEndingPrices(tickerIndex) / tickerStartingPrices(tickerIndex) - 1
         
-    Next i'
+    Next i
     
  - Original Code: 
    
-   `'3a) Initialize variables for starting price and ending price
-    Dim startingPrice As Single
-    Dim endingPrice As Single
-    
-    '3b) Activate data worksheet
-    Worksheets(yearValue).Activate
-    
-    '3c) Get the number of rows to loop over
-    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
-    
-    '4) Loop through tickers
-    For i = 0 To 11
-    ticker = tickers(i)
-    totalVolume = 0
-    
         '5) Loop through rows in the data
         Worksheets(yearValue).Activate
         For j = 2 To RowCount
