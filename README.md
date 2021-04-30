@@ -30,7 +30,7 @@ Original 2017
 
 **Code**
 
-Some of the code is similar between the original and the refactored version. The code pasted below some areas where it was different between the two, however still remains similar. One of the big differences is that the refactored code uses multiple arrays when looping through the data, so you can change the constraints of the arrays to include as much data as you want. Also you can see that there are similar aspects to the code that are in both, just presented in different ways. 
+Some of the code is similar between the original and the refactored version, but presented in a different way. The code pasted below highlights some of these areas. One of the big differences between the 2 approaches is that the refactored code uses multiple arrays when looping through the data, so you can change the constraints of the arrays to include as much data as you want.
 
 - Refactored Code
         
