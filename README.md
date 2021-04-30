@@ -10,6 +10,8 @@ Steve is analyzing stock market data for his parents to help them in choosing st
 
 ### 2018 vs 2017 Stock Performance
 
+Overall stock performance based on a percentage return was much lower in 2018 than 2017. Majority of stocks in 2018 (12/14 stocks chosen) had a negative return, where as only one stock in 2017 had a negative return. However, in 2018 there was a higher daily volume when looking at all stocks together. 
+
 ### Efficiency & Optimization of Original vs Refactored Script
 
 ![image_name](Theater_Outcomes_vs_Launch.png)
