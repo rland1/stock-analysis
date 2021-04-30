@@ -28,13 +28,13 @@ Original 2018
 Original 2017
 ![image_name](VBA_Challenge_2017_Original.png)
 
-- Code 
+**Code**
 
 Some of the code is similar between the original and the refactored version. I have copy and pasted some areas where it was different between the two. One of the big differences is that the refactored code uses multiple arrays. 
 
   - Refactored Code: 
 
-'  '1a) Create a ticker Index
+   '1a) Create a ticker Index
     Dim tickerIndex As Long
     tickerIndex = 0
 
@@ -89,7 +89,7 @@ Some of the code is similar between the original and the refactored version. I h
     
  - Original Code: 
    
-   ''3a) Initialize variables for starting price and ending price
+   `'3a) Initialize variables for starting price and ending price
     Dim startingPrice As Single
     Dim endingPrice As Single
     
@@ -137,7 +137,7 @@ Some of the code is similar between the original and the refactored version. I h
         Cells(4 + i, 2).Value = totalVolume
         Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
     
-    Next i'
+    Next i'`
 
 
 ## Summary
