@@ -30,7 +30,7 @@ Original 2017
 
 **Code**
 
-Some of the code is similar between the original and the refactored version. I have copy and pasted some areas where it was different between the two. One of the big differences is that the refactored code uses multiple arrays. 
+Some of the code is similar between the original and the refactored version. The code pasted below some areas where it was different between the two, however still remains similar. One of the big differences is that the refactored code uses multiple arrays when looping through the data, so you can change the constraints of the arrays to include as much data as you want. Also you can see that there are similar aspects to the code that are in both, just presented in different ways. 
 
 - Refactored Code
         
@@ -58,8 +58,8 @@ Some of the code is similar between the original and the refactored version. I h
         End If
    
     
-    '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
-    For i = 0 To 11
+         '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
+             For i = 0 To 11
         
         Worksheets("All Stocks Analysis").Activate
         tickerIndex = i
