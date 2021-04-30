@@ -67,7 +67,6 @@ Some of the code is similar between the original and the refactored version, but
         Cells(i + 4, 2).Value = tickerVolumes(tickerIndex)
         Cells(i + 4, 3).Value = tickerEndingPrices(tickerIndex) / tickerStartingPrices(tickerIndex) - 1
         
-    Next i
     
  - Original Code: 
    
